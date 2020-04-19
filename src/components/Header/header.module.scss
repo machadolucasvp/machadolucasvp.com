@@ -1,0 +1,33 @@
+.nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between; 
+    padding: 0.5rem;
+}
+
+.list-item {
+    margin-right: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.list-item:hover {
+    color: #d80668;
+}
+
+.active-list-item {
+    color: #7706D8;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
