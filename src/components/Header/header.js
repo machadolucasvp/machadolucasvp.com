@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import headerStyles from './header.module.scss'
+import profile from '../..//assets/profile3.jpeg'
 
 const Header = () => {
     return (
         <header>
             <nav className={headerStyles.nav}>
                 <div className={headerStyles.profileCard}>
+                    <img src={profile} />
                     <h1>Lucas Machado</h1>
                 </div>
                 <ul className={headerStyles.list}>
