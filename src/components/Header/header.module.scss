@@ -46,3 +46,10 @@
         flex-direction: column;
     }
 }
+
+@media (max-width:860px)
+{
+    .profile-card {
+        margin-right: 4rem;
+    }
+}
