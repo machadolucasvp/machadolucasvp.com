@@ -14,6 +14,9 @@ export default () => {
                          title
                          date
                          tags
+                     },
+                     fields {
+                         slug
                      }
                  }
              }
@@ -30,7 +33,8 @@ export default () => {
                         title={e.node.frontmatter.title}
                         date={e.node.frontmatter.date} 
                         time= {e.node.timeToRead}
-                        tags={e.node.frontmatter.tags}>
+                        tags={e.node.frontmatter.tags}
+                        link={`blog/${e.node.fields.slug}`}>       
                     </Post>
                 )
             })}
