@@ -9,7 +9,10 @@ const Header = () => {
             <nav className={headerStyles.nav}>
                 <div className={headerStyles.profileCard}>
                     <img src={profile} />
-                    <h1>Lucas Machado</h1>
+                    <span>
+                        <h1>Lucas Machado</h1>
+                        <small className={headerStyles.role}><span style={{color:'#ff79c6'}}>const</span> <span style={{color: '#50fa7b'}}>role</span> <span style={{color:'#ff79c6'}}> = </span> () <span style={{color:'#ff79c6'}}> => </span>  <span style={{color:'#f1fa8c'}}>'software engineer'</span></small>
+                    </span>
                 </div>
                 <ul className={headerStyles.list}>
                     <li>
