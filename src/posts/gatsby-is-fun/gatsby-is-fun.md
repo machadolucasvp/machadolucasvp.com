@@ -11,3 +11,7 @@ tags: ['gatsby','graphql','css-modules']
 1. Code
 2. Compile
 3. Enjoy !
+
+```javascript
+const role = () => return 'software engineer'
+```

@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import blogStyles from './blog.module.scss'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '../../static/prismjs/themes/dracula-theme.css'
 
 export const res = graphql`
     query (
