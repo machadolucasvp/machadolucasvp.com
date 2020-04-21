@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import headerStyles from './header.module.scss'
-import profile from '../..//assets/profile3.jpeg'
+import profile from '../..//assets/profile.jpeg'
 
 const Header = () => {
     return (

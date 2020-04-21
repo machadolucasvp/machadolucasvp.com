@@ -7,23 +7,39 @@
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     padding: 0 0.3rem 0;
     margin: 2rem 0 2rem;
-    padding: 0.5rem 1rem 0.5rem;
+    padding: 0.5rem 0 0.5rem;
     border-radius: 0.5rem;
     border-width: 0.5px;
     border-style: solid;
   }
 
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 5px 5px rgba(119,6,216,.10);
+   // border-color: #d80668;
+}
+.card:hover h2{
+    color: #7706D8;
+}
+
 .card-item {
     color: black;
+    padding: 0 1rem 0;
 }
 
 .card-item h2 {
     margin: 0px;
 }
-  
-.card:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.10), 0 5px 5px rgba(0,0,0,.10);
-   // border-color: #d80668;
+
+.card-item ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 0 0.2rem;
+}
+
+.card-item li {
+    margin-right: 0.5rem;
 }
 
 .tag-container{
