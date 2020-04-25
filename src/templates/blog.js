@@ -26,8 +26,6 @@ export const res = graphql`
     `
 
 const Blog = (props) => {
-    console.log(props.data)
-    console.log('props')
     return (
         <Layout>
             <div className={blogStyles.header}>

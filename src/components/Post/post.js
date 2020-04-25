@@ -12,7 +12,7 @@ const Post = (props) => {
                     <ul>
                         <li>{props.date}</li>
 
-                        <li>  {props.time} min <FontAwesomeIcon icon={faBook} size="sm" color="#282c35" /></li>
+                        <li>  {props.time} min <FontAwesomeIcon className={blogStyles.icon} icon={faBook} size="sm" color="#282c35" /></li>
                     </ul>
                     <h2>{props.title}</h2>
                     <div className={blogStyles.tagContainer}>

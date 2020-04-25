@@ -18,7 +18,7 @@ const SkillChart = (props) => {
                     show: false
                 },
                 animations: {
-                    speed: 3500,
+                    speed: 800,
                 },
             },
 

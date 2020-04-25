@@ -16,10 +16,12 @@
     margin-right: 1.5rem;
     text-decoration: none;
     color: black;
+    transition: color 0.5s ease 0s;
 }
 
 .list-item:hover {
-    color: #d80668;
+   // color: #d80668;
+   color: #7706D8;
 }
 
 .active-list-item {
