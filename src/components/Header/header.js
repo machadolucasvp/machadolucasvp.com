@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import headerStyles from './header.module.scss'
 import profile from '../..//assets/profile.jpeg'
 
@@ -15,22 +15,22 @@ const Header = () => {
                 </div>
                 <ul className={headerStyles.list}>
                     <li>
-                        <Link className={headerStyles.listItem}
+                        <AniLink className={headerStyles.listItem}
                             activeClassName={headerStyles.activeListItem}
-                            to="/" >About
-                        </Link>
+                            paintDrip to="/" hex="#7D53DE">About
+                        </AniLink>
                     </li>
                     <li>
-                        <Link className={headerStyles.listItem}
+                        <AniLink className={headerStyles.listItem}
                             activeClassName={headerStyles.activeListItem}
-                            to="/blog" >Blog
-                        </Link>
+                            paintDrip to="/blog" hex="#7D53DE">Blog
+                        </AniLink>
                     </li>
                     <li>
-                        <Link className={headerStyles.listItem}
+                        <AniLink className={headerStyles.listItem}
                             activeClassName={headerStyles.activeListItem}
-                            to="/projects">Projects
-                        </Link>
+                             paintDrip to="/projects" hex="#7D53DE">Projects
+                        </AniLink>
                     </li>
 
                     
