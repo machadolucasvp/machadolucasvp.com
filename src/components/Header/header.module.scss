@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .nav {
     display:flex;
     align-items: center;
@@ -15,17 +17,16 @@
 .list-item {
     margin-right: 1.5rem;
     text-decoration: none;
-    color: black;
+    color: $dark;
     transition: color 0.5s ease 0s;
 }
 
 .list-item:hover {
-   // color: #d80668;
-   color: #7706D8;
+   color: $primary;
 }
 
 .active-list-item {
-    color: #7706D8;
+    color: $primary;
 }
 
 .profile-card {
@@ -33,20 +34,18 @@
     flex-direction: row;
     align-items: center;
 
-}
-
-
-.profile-card img{
-    width: 80px;
-    margin-right: 0.5rem;
-    border-radius: 50%;
-    border: 8px solid transparent;
+    img {
+        width: 80px;
+        margin-right: 0.5rem;
+        border-radius: 50%;
+        border: 8px solid transparent;
+    }
 }
 
 .role {
-    color: white;
+    color: $light;
     padding: 0.5rem;
-    background-color: #282a36;
+    background-color: $dark;
     border-radius: 5rem;
 }
 

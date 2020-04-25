@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .link {
     text-decoration: none;
 }
@@ -11,22 +13,27 @@
     border-radius: 0.5rem;
     border-width: 0.5px;
     border-style: solid;
-    border-color: #777777;
+    border-color: $dark;
     transition: all 0.5s ease-in-out 0s;
   }
 
 .card:hover {
-    box-shadow: 0 4px 9px rgba(0,0,0,0.10), 0 5px 5px rgba(119,6,216,.10);
-   border-color: #8510D1;
+    box-shadow: 0 4px 9px rgba(0,0,0,0.12), 0 4px 9px rgba(0,0,0,.25);
+   border-color: $primary;
    * {
-    color: #8510D1;
+    color: $primary;
     transition: all 0.5s ease-in-out 0s;
+   }
+
+   .tag {
+       background-color: $primary;
+       color: $light;
    }
 
 }
 
 .card-item {
-    color: black;
+    color: $dark;
     padding: 0 1rem 0;
     transition: all 0.5s ease-in-out 0s;
 
@@ -55,7 +62,7 @@
 }
 
 .tag{
-    background-color:rgba(211,211,211,.30);
+    background-color: $light-variant;
     border-radius: 0.5rem;
     margin-right: 0.5rem ;
     padding: 0.1rem 0.3rem;

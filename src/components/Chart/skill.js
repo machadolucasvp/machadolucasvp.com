@@ -50,7 +50,7 @@ const SkillChart = (props) => {
             yaxis: {
                 show: false,
             },
-            colors: ['#7706D8'],
+            colors: ['#7D53DE'],
         },
 
     }
