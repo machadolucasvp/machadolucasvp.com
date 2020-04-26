@@ -1,10 +1,14 @@
-@import '../../styles/variables.scss';
+
 
 .nav {
     display:flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
+
+    h1 {
+        margin: 0px;
+    }
 }
 
 .list {
@@ -17,16 +21,16 @@
 .list-item {
     margin-right: 1.5rem;
     text-decoration: none;
-    color: $dark;
+    color: var(--text);
     transition: color 0.5s ease 0s;
 }
 
 .list-item:hover {
-   color: $primary;
+   color: var(--primary);
 }
 
 .active-list-item {
-    color: $primary;
+    color: var(--primary);
 }
 
 .profile-card {
@@ -43,10 +47,18 @@
 }
 
 .role {
-    color: $light;
+    color: var(--bg);
     padding: 0.5rem;
-    background-color: $dark;
+    background-color: var(--text);
     border-radius: 5rem;
+}
+
+.bulb {
+
+    &:light {
+        color: #ffbd69;
+    }
+    
 }
 
 @media (max-width:576px)

@@ -1,14 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-@import 'variables.scss';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import "variables.scss";
 
-body {
-    font-family: 'Poppins', sans-srif;
-    background-color: $light;
-    color: $dark;
+body.light {
+    --bg: #ffffff;
+    --bg-variant: #d2d7df;
+    --text: #282c35;
+    --primary: #7d53de;
+    --secondary: #d81e5b;
+    font-family: "Poppins", sans-srif;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+body.dark {
+    --bg: #282c35;
+    --bg-variant: rgba(210, 215, 223, 0.301);
+    --text: #ffffff;
+    --primary: #7d53de;
+    --secondary: #d81e5b;
+    font-family: "Poppins", sans-srif;
+    background-color: var(--bg);
+    color: var(--text);
 }
 
 a {
-    color: $primary;
+    color: var(--primary);
     text-decoration: none;
 }
 

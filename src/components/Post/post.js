@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Post = (props) => {
     return (
-        <AniLink className={blogStyles.link} cover to={props.link} duration={1.5} bg="#7D53DE">
+        <AniLink className={blogStyles.link} cover to={props.link} duration={0.7} bg="#7D53DE">
             <div className={blogStyles.card}>
                 <div className={blogStyles.cardItem}>
                     <ul>

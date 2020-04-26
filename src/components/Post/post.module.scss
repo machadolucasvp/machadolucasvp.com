@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+
 
 .link {
     text-decoration: none;
@@ -13,27 +13,27 @@
     border-radius: 0.5rem;
     border-width: 0.5px;
     border-style: solid;
-    border-color: $dark;
+    border-color: var(--text);
     transition: all 0.5s ease-in-out 0s;
   }
 
 .card:hover {
     box-shadow: 0 4px 9px rgba(0,0,0,0.12), 0 4px 9px rgba(0,0,0,.25);
-   border-color: $primary;
+   border-color: var(--primary);
    * {
-    color: $primary;
+    color: var(--primary);
     transition: all 0.5s ease-in-out 0s;
    }
 
    .tag {
-       background-color: $primary;
-       color: $light;
+       background-color: var(--primary);
+       color: var(--bg);
    }
 
 }
 
 .card-item {
-    color: $dark;
+    color: var(--text);
     padding: 0 1rem 0;
     transition: all 0.5s ease-in-out 0s;
 
@@ -56,13 +56,15 @@
 
 .icon {
     transition: all 0.5s ease-in-out 0s;
+    color: var(--text);
 }
 .tag-container{
     margin-top: 2rem;
 }
 
 .tag{
-    background-color: $light-variant;
+    background-color: var(--bg-variant);
+    color: var(--text);
     border-radius: 0.5rem;
     margin-right: 0.5rem ;
     padding: 0.1rem 0.3rem;
