@@ -5,7 +5,7 @@ import headerStyles from './header.module.scss'
 import profile from '../..//assets/profile.jpeg'
 import { faLightbulb } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import globalStyles from '../../styles/styles.scss'
+
 
 const Header = () => {
 
