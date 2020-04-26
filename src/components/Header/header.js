@@ -24,26 +24,26 @@ const Header = () => {
                 <div className={headerStyles.profileCard}>
                     <img src={profile} />
                     <AniLink className={headerStyles.listItem}
-                        paintDrip duration={0.7} to="/" hex="#7D53DE"> <h1>Lucas Machado</h1>
+                        paintDrip direction="top" duration={0.7} to="/" hex={theme === 'light' ? "#ffffff" : "#282c35"}> <h1>Lucas Machado</h1>
                     </AniLink>
                 </div>
                 <ul className={headerStyles.list}>
                     <li>
                         <AniLink className={headerStyles.listItem}
                             activeClassName={headerStyles.activeListItem}
-                            paintDrip duration={0.7} to="/" hex="#7D53DE">About
+                            paintDrip direction="top" duration={0.7} to="/" hex={theme === 'light' ? "#ffffff" : "#282c35"}>About
                         </AniLink>
                     </li>
                     <li>
                         <AniLink className={headerStyles.listItem}
                             activeClassName={headerStyles.activeListItem}
-                            paintDrip duration={0.7} to="/blog" hex="#7D53DE">Blog
+                            paintDrip direction="top" duration={0.7} to="/blog" hex={theme === 'light' ? "#ffffff" : "#282c35"}>Blog
                         </AniLink>
                     </li>
                     <li>
                         <AniLink className={headerStyles.listItem}
                             activeClassName={headerStyles.activeListItem}
-                            paintDrip duration={0.7} to="/projects" hex="#7D53DE">Projects
+                            paintDrip direction="top" duration={0.7} to="/projects" hex={theme === 'light' ? "#ffffff" : "#282c35"}>Projects
                         </AniLink>
                     </li>
                     <li>

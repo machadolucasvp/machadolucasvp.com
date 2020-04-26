@@ -9,6 +9,7 @@ body.light {
     --secondary: #d81e5b;
     font-family: "Poppins", sans-srif;
     background-color: var(--bg);
+    margin: 0 auto;
     color: var(--text);
 }
 
@@ -21,6 +22,11 @@ body.dark {
     font-family: "Poppins", sans-srif;
     background-color: var(--bg);
     color: var(--text);
+    margin: 0 auto;
+}
+
+canvas {
+    z-index: 0;
 }
 
 a {

@@ -27,7 +27,7 @@ export const res = graphql`
 
 const Blog = (props) => {
     return (
-        <Layout>
+        <div>
             <div className={blogStyles.header}>
                 <h1>{props.data.markdownRemark.frontmatter.title}</h1>
                 <ul>
@@ -39,7 +39,7 @@ const Blog = (props) => {
             </div>
 
             <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
-        </Layout >
+        </div >
     );
 }
 

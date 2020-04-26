@@ -28,7 +28,6 @@ export default () => {
     `)
     console.log(data)
     return (
-        <Layout >
             <div className= {blogStyles.postList}>
                 {data.allMarkdownRemark.edges.map(e => {
                     return (
@@ -43,6 +42,5 @@ export default () => {
                 })}
             </div>
 
-        </Layout>
     );
 }

@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from '../components/Layout/layout'
-import SkillChart from '../components/Chart/skill'
 import '../styles/styles.scss'
 import { graphql, useStaticQuery } from 'gatsby'
 
@@ -20,12 +19,12 @@ export default () => {
     }
 `)
     return (
-        <Layout >
+        <div >
             <h2>Hello world !</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.
             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                Nulla at risus.</p>
-        </Layout>
+        </div>
     )
 }

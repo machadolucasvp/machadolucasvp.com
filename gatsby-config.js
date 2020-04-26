@@ -15,7 +15,12 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-sass',
-    'gatsby-plugin-transition-link',
+    {
+      resolve: "gatsby-plugin-transition-link",
+      options: {
+        layout: require.resolve(`./src/components/Layout/layout.js`)
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

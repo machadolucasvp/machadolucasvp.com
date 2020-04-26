@@ -2,6 +2,7 @@
 
 .link {
     text-decoration: none;
+    transition: all 0.5s ease-in-out 0s;
 }
 
 .card {
@@ -73,6 +74,6 @@
 @media (min-width:860px)
 {
     .card {
-        min-width: 50rem;
+        min-width: 49rem;
     }
 }
