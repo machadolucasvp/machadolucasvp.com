@@ -2,6 +2,7 @@
     padding: 0 1rem;
     margin: 0 auto;
     min-height: 100vh;
+    max-width: 50rem;
 
     display: flex;
     flex-direction: column;
@@ -10,7 +11,7 @@
 
 .content {
     flex-grow: 1;
-    max-width: 50rem;
     transition: all 0.5s ease-in-out 0s;
+    width: 100%;
 }
 
