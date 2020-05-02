@@ -5,11 +5,12 @@ import headerStyles from './header.module.scss'
 import profile from '../..//assets/profile.jpeg'
 import { faLightbulb } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTheme } from '../../contexts/theme';
 
 
 const Header = () => {
 
-    const [theme, setTheme] = useState(null)
+    const { theme, setTheme } = useTheme(null)
 
     const isDarkMode = theme === 'dark'
 
@@ -53,6 +54,7 @@ const Header = () => {
                                 color={theme === 'light' ? "#ffbd69" : "#ffffff"}
                                 onClick={() => {
                                     window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
+                                    setTheme(window.__theme)
                                 }}/>
                         </a>
                     </li>

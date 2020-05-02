@@ -3,19 +3,17 @@ import blogStyles from './post.module.scss'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useTheme } from '../../contexts/theme';
 
 const Post = (props) => {
 
-    const [isDarkMode, setIsDarkMode] = useState(null)
+    const { theme } = useTheme();
 
-    useEffect(() => {
-        setIsDarkMode(document.getElementsByTagName("BODY")[0].className === 'dark')
-    }, []);
 
     return (
         <AniLink className={blogStyles.link} paintDrip direction="top"
             to={props.link} duration={0.7}
-            hex={isDarkMode ? '#282c35' : '#ffffff'}>
+            hex={theme === 'light' ? "#ffffff" : "#282c35"}>
 
             <div className={blogStyles.card}>
                 <div className={blogStyles.cardItem}>
