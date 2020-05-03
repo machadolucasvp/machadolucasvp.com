@@ -48,8 +48,8 @@ const Header = () => {
                         </AniLink>
                     </li>
                     <li>
-                        <a to="#" >
-                            <FontAwesomeIcon icon={faLightbulb}
+                        <a to="#" className={headerStyles.bulb} >
+                            <FontAwesomeIcon id="bulb" icon={faLightbulb}
                                 size="sm"
                                 color={theme === 'light' ? "#ffbd69" : "#ffffff"}
                                 onClick={() => {

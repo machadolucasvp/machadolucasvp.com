@@ -34,7 +34,7 @@ const Blog = (props) => {
                     <li>{props.data.markdownRemark.frontmatter.date}</li>
                     <li> • </li>
                    
-                      <li>  {props.data.markdownRemark.timeToRead} min <FontAwesomeIcon icon={faBook} size="sm" color="#282c35" /></li>
+                      <li>  {props.data.markdownRemark.timeToRead} min <FontAwesomeIcon icon={faBook} size="sm" /></li>
                 </ul>
             </div>
 

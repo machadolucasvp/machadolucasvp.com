@@ -14,7 +14,8 @@ export default function HTML(props) {
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes} className="dark">
-      <script
+
+        <script
           dangerouslySetInnerHTML={{
             __html: `
             (function() {
@@ -40,20 +41,40 @@ export default function HTML(props) {
           `,
           }}
         />
-        {props.preBodyComponents}
-        <div
-          key={`body`}
-          id="___gatsby"
-          dangerouslySetInnerHTML={{ __html: props.body }}
-        />
-        {props.postBodyComponents}
+          <div className="loader" id="loader"
+            style={{
+              height: '100vh',
+              width: '100vw',
+              position: 'fixed',
+              zIndex: '999999'
+            }}
+          >
+            <div className="loader-head"
+            style={{
+              height:'4px',
+              overflow:'hidden',
+              position:'relative'
+            }}
+            >
+              <div class="first-indicator"></div>
+              <div class="second-indicator"></div>
+            </div>
+          </div>
+          {props.preBodyComponents}
+
+          <div
+            key={`body`}
+            id="___gatsby"
+            dangerouslySetInnerHTML={{ __html: props.body }}
+          />
+          {props.postBodyComponents}
       </body>
     </html>
   )
 }
 
 HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
+        htmlAttributes: PropTypes.object,
   headComponents: PropTypes.array,
   bodyAttributes: PropTypes.object,
   preBodyComponents: PropTypes.array,

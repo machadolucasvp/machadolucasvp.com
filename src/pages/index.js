@@ -1,11 +1,11 @@
-import React from "react"
-import Layout from '../components/Layout/layout'
+import React, { useEffect } from "react"
 import '../styles/styles.scss'
 import { graphql, useStaticQuery } from 'gatsby'
 
 
 
 export default () => {
+
     const res = useStaticQuery(graphql`
     query {
         site {
@@ -19,7 +19,7 @@ export default () => {
     }
 `)
     return (
-        <div >
+        <div>
             <h2>Hello world !</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.

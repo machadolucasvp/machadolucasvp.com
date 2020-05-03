@@ -65,9 +65,7 @@ header {
 }
 
 .bulb {
-    &:light {
-        color: #ffbd69;
-    }
+    cursor: pointer;
 }
 
 @media (max-width: 576px) {

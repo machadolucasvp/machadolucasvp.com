@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import blogStyles from './post.module.scss'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
@@ -20,7 +20,7 @@ const Post = (props) => {
                     <ul>
                         <li>{props.date}</li>
 
-                        <li>  {props.time} min <FontAwesomeIcon className={blogStyles.icon} icon={faBook} size="sm" color="" /></li>
+                        <li>  {props.time} min <FontAwesomeIcon className={blogStyles.icon} icon={faBook} size="sm"/></li>
                     </ul>
                     <h2>{props.title}</h2>
                     <div className={blogStyles.tagContainer}>
