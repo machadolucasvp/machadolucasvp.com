@@ -11,6 +11,9 @@ body.light {
     background-color: var(--bg);
     margin: 0 auto;
     color: var(--text);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 body.dark {
@@ -23,6 +26,9 @@ body.dark {
     background-color: var(--bg);
     color: var(--text);
     margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 canvas {
@@ -34,6 +40,7 @@ a {
     text-decoration: none;
     outline: none;
 }
+
 
 
 // Loader Styles

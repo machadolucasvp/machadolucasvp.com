@@ -1,0 +1,14 @@
+.CommentsWrapper {
+    margin: auto;
+    #disqus_thread {
+        a {
+            color: var(--primary) !important;
+        }
+    }
+}
+.CommentsTitle {
+    color: var(--text);
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}

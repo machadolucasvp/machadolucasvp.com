@@ -37,6 +37,7 @@ export default () => {
                             time={e.node.timeToRead}
                             tags={e.node.frontmatter.tags}
                             link={`blog/${e.node.fields.slug}`}>
+                    
                         </Post>
                     )
                 })}

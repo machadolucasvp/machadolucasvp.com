@@ -55,6 +55,13 @@ const Header = () => {
                                 onClick={() => {
                                     window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
                                     setTheme(window.__theme)
+                                    if (window.DISQUS !== undefined) {
+                                        window.setTimeout(() => {
+                                          window.DISQUS.reset({
+                                            reload: true
+                                          })
+                                        }, 300)
+                                      }
                                 }}/>
                         </a>
                     </li>

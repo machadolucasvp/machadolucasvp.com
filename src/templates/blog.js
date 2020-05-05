@@ -5,6 +5,7 @@ import blogStyles from './blog.module.scss'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import '../../static/prismjs/themes/dracula-theme.css'
+import Comments from '../components/Comments/comments'
 
 export const res = graphql`
     query (
@@ -21,11 +22,16 @@ export const res = graphql`
                 }
                 html
                 timeToRead
+                id
+                fields{
+                    slug
+                }
             }
         }
     `
 
 const Blog = (props) => {
+
     return (
         <div>
             <div className={blogStyles.header}>
@@ -39,6 +45,7 @@ const Blog = (props) => {
             </div>
 
             <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
+            <Comments url={props.data.markdownRemark.fields.slug} title={props.data.markdownRemark.frontmatter.title} identifier={props.data.markdownRemark.id}/>
         </div >
     );
 }
