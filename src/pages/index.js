@@ -1,6 +1,8 @@
 import React, { useEffect } from "react"
 import '../styles/styles.scss'
 import { graphql, useStaticQuery } from 'gatsby'
+import WorkInProgress from '../components/WorkInProgress/wip'
+
 
 
 
@@ -20,11 +22,7 @@ export default () => {
 `)
     return (
         <div>
-            <h2>Hello world !</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-               Nulla at risus.</p>
+            <WorkInProgress />
         </div>
     )
 }

@@ -56,8 +56,8 @@ export default function HTML(props) {
               position:'relative'
             }}
             >
-              <div class="first-indicator"></div>
-              <div class="second-indicator"></div>
+              <div className="first-indicator"></div>
+              <div className="second-indicator"></div>
             </div>
           </div>
           {props.preBodyComponents}

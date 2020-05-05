@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from '../components/Layout/layout'
 import { graphql } from 'gatsby'
 import blogStyles from './blog.module.scss'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
