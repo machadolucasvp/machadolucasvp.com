@@ -6,6 +6,7 @@ import { Link } from 'gatsby'
 import { faBlog } from '@fortawesome/free-solid-svg-icons';
 import blogStyles from './blog.module.scss'
 
+
 export default () => {
     const data = useStaticQuery(graphql`
     query {
@@ -26,7 +27,7 @@ export default () => {
          }
     }
     `)
-    console.log(data)
+
     return (
             <div className= {blogStyles.postList}>
                 {data.allMarkdownRemark.edges.map(e => {

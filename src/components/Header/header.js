@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
-import { Link } from 'gatsby'
 import headerStyles from './header.module.scss'
 import profile from '../..//assets/profile.jpeg'
 import { faLightbulb } from '@fortawesome/free-regular-svg-icons'
