@@ -7,7 +7,7 @@
 </h1>
 </div>
 
-[![Build Status](https://travis-ci.com/machadolucasvp/gatsby-playground.svg?branch=master)](https://travis-ci.com/machadolucasvp/gatsby-playground)
+[![Build Status](https://travis-ci.com/machadolucasvp/lucasmachado.surge.sh.svg?branch=master)](https://travis-ci.com/machadolucasvp/lucasmachado.surge.sh)
 
 My personal blog/website, powered by [Gatsby](https://www.gatsbyjs.org)
 
