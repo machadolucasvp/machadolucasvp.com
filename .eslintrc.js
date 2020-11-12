@@ -3,16 +3,19 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  extends: ["airbnb", "plugin:react/recommended"],
+  extends: ['airbnb', 'plugin:react/recommended'],
   globals: {
-    Atomics: "readonly",
-    SharedArrayBuffer: "readonly",
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
   },
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    sourceType: "module",
+    sourceType: 'module',
   },
-  plugins: ["react", "prettier", "react-hooks"],
-}
+  rules: {
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+  },
+  plugins: ['react', 'prettier', 'react-hooks'],
+};

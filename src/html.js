@@ -1,5 +1,5 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function HTML(props) {
   return (
@@ -14,7 +14,6 @@ export default function HTML(props) {
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes} className="dark">
-
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -41,43 +40,46 @@ export default function HTML(props) {
           `,
           }}
         />
-          <div className="loader" id="loader"
+        <div
+          className="loader"
+          id="loader"
+          style={{
+            height: '100vh',
+            width: '100vw',
+            position: 'fixed',
+            zIndex: '999999',
+          }}
+        >
+          <div
+            className="loader-head"
             style={{
-              height: '100vh',
-              width: '100vw',
-              position: 'fixed',
-              zIndex: '999999'
+              height: '4px',
+              overflow: 'hidden',
+              position: 'relative',
             }}
           >
-            <div className="loader-head"
-            style={{
-              height:'4px',
-              overflow:'hidden',
-              position:'relative'
-            }}
-            >
-              <div className="first-indicator"></div>
-              <div className="second-indicator"></div>
-            </div>
+            <div className="first-indicator" />
+            <div className="second-indicator" />
           </div>
-          {props.preBodyComponents}
+        </div>
+        {props.preBodyComponents}
 
-          <div
-            key={`body`}
-            id="___gatsby"
-            dangerouslySetInnerHTML={{ __html: props.body }}
-          />
-          {props.postBodyComponents}
+        <div
+          key="body"
+          id="___gatsby"
+          dangerouslySetInnerHTML={{ __html: props.body }}
+        />
+        {props.postBodyComponents}
       </body>
     </html>
-  )
+  );
 }
 
 HTML.propTypes = {
-        htmlAttributes: PropTypes.object,
+  htmlAttributes: PropTypes.object,
   headComponents: PropTypes.array,
   bodyAttributes: PropTypes.object,
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
-}
+};
