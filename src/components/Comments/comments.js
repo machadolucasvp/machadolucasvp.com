@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactDisqusComments from 'react-disqus-comments';
+
 import commentStyles from './comment.module.scss';
 
 const Comments = ({ title, url, identifier }) => {
@@ -18,6 +19,12 @@ const Comments = ({ title, url, identifier }) => {
       />
     </div>
   );
+};
+
+Comments.propTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  identifier: PropTypes.string.isRequired,
 };
 
 export default Comments;

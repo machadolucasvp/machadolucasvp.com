@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { faLightbulb } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import headerStyles from './header.module.scss';
+
 import profile from '../../assets/profile.jpeg';
+import headerStyles from './header.module.scss';
 import { useTheme } from '../../contexts/theme';
 
 const Header = () => {
@@ -14,13 +15,13 @@ const Header = () => {
   useEffect(() => {
     setTheme(window.__theme);
     window.__onThemeChange = () => setTheme(window.__theme);
-  });
+  }, []);
 
   return (
     <header>
       <nav className={headerStyles.nav}>
         <div className={headerStyles.profileCard}>
-          <img src={profile} />
+          <img src={profile} alt="Profile" />
           <AniLink
             className={headerStyles.listItem}
             paintDrip

@@ -1,11 +1,12 @@
 import React from 'react';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import { Twemoji } from 'react-emoji-render';
+import Typist from 'react-typist';
+
 import wip from '../../assets/wip.svg';
 import wipStyles from './wip.module.scss';
-import Typist from 'react-typist';
-import { Twemoji } from 'react-emoji-render';
-import 'react-typist/dist/Typist.css';
-import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { useTheme } from '../../contexts/theme';
+import 'react-typist/dist/Typist.css';
 
 const WorkInProgress = () => {
   const { theme } = useTheme();
@@ -46,21 +47,9 @@ const WorkInProgress = () => {
         </Typist>
       </div>
 
-      <img src={wip} />
+      <img src={wip} alt="Page under development" />
     </div>
   );
 };
 
 export default WorkInProgress;
-
-/*
-
-                <ReactTypingEffect
-                text=
-                {['Welcome!','Unfortunately my coffee ran out :!',
-                'This page is a work in progress', 'Have a look at the others one ']}
-                speed={100}
-                eraseDelay={2000}
-                typingDelay={400}
-                />
-*/

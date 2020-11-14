@@ -1,12 +1,10 @@
 import React from 'react';
-import { graphql, useStaticQuery, Link } from 'gatsby';
-import { faBlog } from '@fortawesome/free-solid-svg-icons';
-import Post from '../components/Post/post';
+import { graphql, useStaticQuery } from 'gatsby';
 
-import Layout from '../components/Layout/layout';
+import Post from '../components/Post/post';
 import blogStyles from './blog.module.scss';
 
-export default () => {
+const BlogPage = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark {
@@ -29,15 +27,18 @@ export default () => {
 
   return (
     <div className={blogStyles.postList}>
-      {data.allMarkdownRemark.edges.map((e) => (
+      {data.allMarkdownRemark.edges.map(({ node }) => (
         <Post
-          title={e.node.frontmatter.title}
-          date={e.node.frontmatter.date}
-          time={e.node.timeToRead}
-          tags={e.node.frontmatter.tags}
-          link={`blog/${e.node.fields.slug}`}
+          key={node.fields.slug}
+          title={node.frontmatter.title}
+          date={node.frontmatter.date}
+          time={node.timeToRead}
+          tags={node.frontmatter.tags}
+          link={`blog/${node.fields.slug}`}
         />
       ))}
     </div>
   );
 };
+
+export default BlogPage;
