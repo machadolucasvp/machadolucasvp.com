@@ -8,18 +8,6 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     author: 'Lucas Machado',
-    languageSkills: ['Java', 'Javascript', 'Typescript', 'C', 'Python', 'SQL'],
-    languageValues: ['90%', '80%', '60%', '45%', '50%', '85%'],
-    technologySkills: [
-      'Spring Boot',
-      'Hibernate',
-      'Express',
-      'AdonisJs',
-      'React',
-      'CSS',
-      'Angular',
-    ],
-    technologyValues: ['90%', '85%', '70%', '80%', '65%', '50%', '45%'],
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -34,6 +22,12 @@ module.exports = {
       options: {
         name: 'src',
         path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-page-creator',
+      options: {
+        path: `${__dirname}/src/pages`,
       },
     },
     'gatsby-plugin-sharp',
