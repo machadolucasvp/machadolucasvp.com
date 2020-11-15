@@ -13,6 +13,22 @@ const Post = ({
 }) => {
   const { theme } = useTheme();
 
+  const renderCardMetadata = () => (
+    <ul>
+      <li>{date}</li>
+      <li>
+        {time}
+        {' '}
+        min
+        <FontAwesomeIcon
+          className={blogStyles.icon}
+          icon={faBook}
+          size="sm"
+        />
+      </li>
+    </ul>
+  );
+
   return (
     <AniLink
       className={blogStyles.link}
@@ -24,21 +40,7 @@ const Post = ({
     >
       <div className={blogStyles.card}>
         <div className={blogStyles.cardItem}>
-          <ul>
-            <li>{date}</li>
-            <li>
-              {' '}
-              {time}
-              {' '}
-              min
-              {' '}
-              <FontAwesomeIcon
-                className={blogStyles.icon}
-                icon={faBook}
-                size="sm"
-              />
-            </li>
-          </ul>
+          {renderCardMetadata()}
           <h2>{title}</h2>
           <div className={blogStyles.tagContainer}>
             {tags.map((tag) => (
