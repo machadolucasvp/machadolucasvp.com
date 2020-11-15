@@ -1,9 +1,17 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/prop-types */
 import React from 'react';
-import PropTypes from 'prop-types';
 
-export default function HTML(props) {
+export default function HTML({
+  htmlAttributes,
+  headComponents,
+  bodyAttributes,
+  preBodyComponents,
+  postBodyComponents,
+  body,
+}) {
   return (
-    <html {...props.htmlAttributes}>
+    <html lang="pt-br" {...htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -11,9 +19,9 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        {props.headComponents}
+        {headComponents}
       </head>
-      <body {...props.bodyAttributes} className="dark">
+      <body {...bodyAttributes} className="dark">
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -62,24 +70,15 @@ export default function HTML(props) {
             <div className="second-indicator" />
           </div>
         </div>
-        {props.preBodyComponents}
+        {preBodyComponents}
 
         <div
           key="body"
           id="___gatsby"
-          dangerouslySetInnerHTML={{ __html: props.body }}
+          dangerouslySetInnerHTML={{ __html: body }}
         />
-        {props.postBodyComponents}
+        {postBodyComponents}
       </body>
     </html>
   );
 }
-
-HTML.propTypes = {
-  htmlAttributes: PropTypes.object,
-  headComponents: PropTypes.array,
-  bodyAttributes: PropTypes.object,
-  preBodyComponents: PropTypes.array,
-  body: PropTypes.string,
-  postBodyComponents: PropTypes.array,
-};

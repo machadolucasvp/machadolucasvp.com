@@ -16,6 +16,9 @@ module.exports = {
   },
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/no-danger': 'off',
+    'no-underscore-dangle': 'off',
+    'no-use-before-define': 'off',
   },
   plugins: ['react', 'prettier', 'react-hooks'],
 };
