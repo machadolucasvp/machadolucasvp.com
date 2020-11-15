@@ -36,7 +36,7 @@ const WorkInProgress = () => {
               direction="top"
               duration={0.7}
               to="/blog"
-              hex={theme === 'light' ? '#ffffff' : '#282c35'}
+              hex={theme.color}
             >
               others one
               {' '}

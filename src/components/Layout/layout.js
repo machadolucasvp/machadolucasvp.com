@@ -21,7 +21,6 @@ const Layout = ({ children }) => {
     <div className={layoutStyles.container}>
       <ThemeProvider>
         <Header className={layoutStyles.header} />
-
         <div className={layoutStyles.content}>{children}</div>
       </ThemeProvider>
 

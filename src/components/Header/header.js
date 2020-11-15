@@ -7,15 +7,28 @@ import profile from '../../assets/profile.jpeg';
 import headerStyles from './header.module.scss';
 import { useTheme } from '../../contexts/theme';
 
-const Header = () => {
-  const { theme, setTheme } = useTheme(null);
+const buildBulbColor = (themeType) => (!isDarkMode(themeType) ? '#ffbd69' : '#ffffff');
+const isDarkMode = (themeType) => themeType === 'dark';
 
-  const isDarkMode = theme === 'dark';
+const Header = () => {
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     setTheme(window.__theme);
     window.__onThemeChange = () => setTheme(window.__theme);
   }, []);
+
+  const handleBulbClick = () => {
+    window.__setPreferredTheme(isDarkMode(theme.type) ? 'light' : 'dark');
+    setTheme(window.__theme);
+    if (window.DISQUS !== undefined) {
+      window.setTimeout(() => {
+        window.DISQUS.reset({
+          reload: true,
+        });
+      }, 300);
+    }
+  };
 
   return (
     <header>
@@ -28,7 +41,7 @@ const Header = () => {
             direction="top"
             duration={0.7}
             to="/"
-            hex={theme === 'light' ? '#ffffff' : '#282c35'}
+            hex={theme.color}
           >
             {' '}
             <h1>Lucas Machado</h1>
@@ -43,7 +56,7 @@ const Header = () => {
               direction="top"
               duration={0.7}
               to="/"
-              hex={theme === 'light' ? '#ffffff' : '#282c35'}
+              hex={theme.color}
             >
               About
             </AniLink>
@@ -56,7 +69,7 @@ const Header = () => {
               direction="top"
               duration={0.7}
               to="/blog"
-              hex={theme === 'light' ? '#ffffff' : '#282c35'}
+              hex={theme.color}
             >
               Blog
             </AniLink>
@@ -69,7 +82,7 @@ const Header = () => {
               direction="top"
               duration={0.7}
               to="/projects"
-              hex={theme === 'light' ? '#ffffff' : '#282c35'}
+              hex={theme.color}
             >
               Projects
             </AniLink>
@@ -80,18 +93,8 @@ const Header = () => {
                 id="bulb"
                 icon={faLightbulb}
                 size="sm"
-                color={theme === 'light' ? '#ffbd69' : '#ffffff'}
-                onClick={() => {
-                  window.__setPreferredTheme(isDarkMode ? 'light' : 'dark');
-                  setTheme(window.__theme);
-                  if (window.DISQUS !== undefined) {
-                    window.setTimeout(() => {
-                      window.DISQUS.reset({
-                        reload: true,
-                      });
-                    }, 300);
-                  }
-                }}
+                color={buildBulbColor(theme.type)}
+                onClick={handleBulbClick}
               />
             </a>
           </li>

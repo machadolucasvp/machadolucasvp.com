@@ -20,7 +20,7 @@ const Post = ({
       direction="top"
       to={link}
       duration={0.7}
-      hex={theme === 'light' ? '#ffffff' : '#282c35'}
+      hex={theme.color}
     >
       <div className={blogStyles.card}>
         <div className={blogStyles.cardItem}>
