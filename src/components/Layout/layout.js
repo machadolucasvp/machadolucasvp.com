@@ -23,7 +23,6 @@ const Layout = ({ children }) => {
         <Header className={layoutStyles.header} />
         <div className={layoutStyles.content}>{children}</div>
       </ThemeProvider>
-
       <Footer />
     </div>
   );

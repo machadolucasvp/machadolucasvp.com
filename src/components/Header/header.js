@@ -36,7 +36,7 @@ const Header = () => {
         <div className={headerStyles.profileCard}>
           <img src={profile} alt="Profile" />
           <AniLink
-            className={headerStyles.listItem}
+            className={headerStyles.listItemLink}
             paintDrip
             direction="top"
             duration={0.7}
@@ -48,9 +48,9 @@ const Header = () => {
           </AniLink>
         </div>
         <ul className={headerStyles.list}>
-          <li>
+          <li className={headerStyles.listItem}>
             <AniLink
-              className={headerStyles.listItem}
+              className={headerStyles.listItemLink}
               activeClassName={headerStyles.activeListItem}
               paintDrip
               direction="top"
@@ -61,9 +61,9 @@ const Header = () => {
               About
             </AniLink>
           </li>
-          <li>
+          <li className={headerStyles.listItem}>
             <AniLink
-              className={headerStyles.listItem}
+              className={headerStyles.listItemLink}
               activeClassName={headerStyles.activeListItem}
               paintDrip
               direction="top"
@@ -74,29 +74,19 @@ const Header = () => {
               Blog
             </AniLink>
           </li>
-          <li>
-            <AniLink
-              className={headerStyles.listItem}
-              activeClassName={headerStyles.activeListItem}
-              paintDrip
-              direction="top"
-              duration={0.7}
-              to="/projects"
-              hex={theme.color}
+          <li className={headerStyles.listItem}>
+            <button
+              className={headerStyles.bulbButton}
+              onClick={handleBulbClick}
+              type="button"
             >
-              Projects
-            </AniLink>
-          </li>
-          <li>
-            <a to="#" className={headerStyles.bulb}>
               <FontAwesomeIcon
                 id="bulb"
                 icon={faLightbulb}
                 size="sm"
                 color={buildBulbColor(theme.type)}
-                onClick={handleBulbClick}
               />
-            </a>
+            </button>
           </li>
         </ul>
       </nav>

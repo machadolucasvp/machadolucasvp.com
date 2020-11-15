@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
-import Post from '../components/Post/post';
+import Post from '../../components/Post/post';
 import blogStyles from './blog.module.scss';
 
 const BlogPage = () => {

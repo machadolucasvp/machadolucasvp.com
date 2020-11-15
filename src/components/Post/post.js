@@ -41,8 +41,8 @@ const Post = ({
           </ul>
           <h2>{title}</h2>
           <div className={blogStyles.tagContainer}>
-            {tags.map((tag, index) => (
-              <span key={index} className={blogStyles.tag}>{tag}</span>
+            {tags.map((tag) => (
+              <span key={`${date}-${tag}`} className={blogStyles.tag}>{tag}</span>
             ))}
           </div>
         </div>

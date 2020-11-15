@@ -26,17 +26,20 @@ header {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .list-item {
-    margin-right: 1.5rem;
-    text-decoration: none;
-    color: var(--text);
+    margin-right: 2rem;
     transition: color 0.5s ease 0s;
 }
 
-.list-item:hover {
+.list-item-link {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.list-item-link:hover {
     color: var(--primary);
 }
 
@@ -64,8 +67,12 @@ header {
     border-radius: 5rem;
 }
 
-.bulb {
+.bulbButton {
     cursor: pointer;
+    border-width: 0px;
+    border-color: transparent;
+    background-color: transparent;
+    outline: none;
 }
 
 @media (max-width: 576px) {
