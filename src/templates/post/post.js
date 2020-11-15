@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 import { faBook } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import blogStyles from './blog.module.scss';
-import Comments from '../components/Comments/comments';
-import '../../static/prismjs/themes/dracula-theme.css';
+import postStyles from './post.module.scss';
+import Comments from '../../components/Comments/comments';
+import '../../../static/prismjs/themes/dracula-theme.css';
 
 export const res = graphql`
   query($slug: String) {
@@ -26,35 +26,43 @@ export const res = graphql`
   }
 `;
 
-const Blog = ({ data }) => (
-  <div>
-    <div className={blogStyles.header}>
+const PostTemplate = ({ data }) => {
+  const renderPostMetadata = () => (
+    <>
       <h1>{data.markdownRemark.frontmatter.title}</h1>
       <ul>
         <li>{data.markdownRemark.frontmatter.date}</li>
         <li> • </li>
-        x
         <li>
-          {' '}
           {data.markdownRemark.timeToRead}
           {' '}
           min
-          {' '}
-          <FontAwesomeIcon icon={faBook} size="sm" />
+          <FontAwesomeIcon
+            className={postStyles.timeToReadIcon}
+            icon={faBook}
+            size="sm"
+          />
         </li>
       </ul>
+    </>
+  );
+
+  return (
+    <div>
+      <div className={postStyles.header}>
+        {renderPostMetadata()}
+      </div>
+      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+      <Comments
+        url={data.markdownRemark.fields.slug}
+        title={data.markdownRemark.frontmatter.title}
+        identifier={data.markdownRemark.id}
+      />
     </div>
+  );
+};
 
-    <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-    <Comments
-      url={data.markdownRemark.fields.slug}
-      title={data.markdownRemark.frontmatter.title}
-      identifier={data.markdownRemark.id}
-    />
-  </div>
-);
-
-Blog.propTypes = {
+PostTemplate.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       id: PropTypes.string,
@@ -71,4 +79,4 @@ Blog.propTypes = {
   }).isRequired,
 };
 
-export default Blog;
+export default PostTemplate;

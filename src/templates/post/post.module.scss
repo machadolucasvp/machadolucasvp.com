@@ -1,11 +1,11 @@
 .header {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: var(--text);
 }
 
 .header ul {
     margin: 0;
-    padding: 0;
+    padding: 0.2rem;
     display: flex;
     list-style: none;
 }
@@ -16,4 +16,8 @@
 
 .header h1 {
     margin-bottom: 0;
+}
+
+.time-to-read-icon {
+    margin-left: 0.4rem;
 }

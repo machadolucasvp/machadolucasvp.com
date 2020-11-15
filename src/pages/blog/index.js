@@ -34,7 +34,7 @@ const BlogPage = () => {
           date={node.frontmatter.date}
           time={node.timeToRead}
           tags={node.frontmatter.tags}
-          link={`blog/${node.fields.slug}`}
+          link={`post/${node.fields.slug}`}
         />
       ))}
     </div>

@@ -17,7 +17,7 @@ module.exports.onCreateNode = ({ node, getNode, actions }) => {
 
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const blogTemplatePath = path.resolve('./src/templates/blog.js');
+  const postTemplatePath = path.resolve('./src/templates/post/post.js');
 
   const result = await graphql(`
     query {
@@ -35,8 +35,8 @@ module.exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: `blog${node.fields.slug}`,
-      component: blogTemplatePath,
+      path: `post${node.fields.slug}`,
+      component: postTemplatePath,
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.
