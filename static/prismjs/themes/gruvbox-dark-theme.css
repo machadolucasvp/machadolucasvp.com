@@ -1,0 +1,130 @@
+/**
+ * Gruvbox Theme originally by morhetz 
+ * https://github.com/morhetz/gruvbox
+ *
+ * Adapted for PrismJS by Lucas Machado [@machadolucasvp]
+ */
+
+ code[class*="language-"],
+ pre[class*="language-"] {
+   color: #83a598;
+   background: none;
+   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+   text-align: left;
+   white-space: pre;
+   word-spacing: normal;
+   word-break: normal;
+   word-wrap: normal;
+   line-height: 1.5;
+   -moz-tab-size: 4;
+   -o-tab-size: 4;
+   tab-size: 4;
+   -webkit-hyphens: none;
+   -moz-hyphens: none;
+   -ms-hyphens: none;
+   hyphens: none;
+ }
+ 
+ /* Code blocks */
+ pre[class*="language-"] {
+   padding: 1em;
+   margin: .5em 0;
+   overflow: auto;
+   border-radius: 0.3em;
+ }
+ 
+ :not(pre) > code[class*="language-"],
+ pre[class*="language-"] {
+   background: #1d2021;
+ }
+ 
+ /* Inline code */
+ :not(pre) > code[class*="language-"] {
+   padding: .1em;
+   border-radius: .3em;
+   white-space: normal;
+ }
+ 
+ .token.comment,
+ .token.prolog,
+ .token.doctype,
+ .token.cdata {
+   color: #8ec07c;
+ }
+ 
+ .token.punctuation {
+   color: #8ec07c;
+ }
+ 
+ .namespace {
+   opacity: .7;
+ }
+ 
+ .token.property,
+ .token.symbol,
+ .token.deleted,
+ .token.tag,
+ .token.constant {
+  color: #83a598
+ }
+ 
+ .token.boolean,
+ .token.number {
+   color: #d3869b;
+ }
+ 
+
+ .token.attr-name {
+   color: #fabd2f
+ }
+
+ .token.selector,
+ .token.string,
+ .token.char,
+ .token.builtin,
+ .token.attr-value,
+ .token.inserted {
+   color: #b8bb26;
+ }
+ 
+ .token.operator,
+ .token.entity,
+ .token.url,
+ .language-css .token.string,
+ .style .token.string,
+ .token.variable {
+   color: #8ec07c;
+ }
+
+ .token.atrule,
+ .token.function {
+   color: #fabd2f;
+ }
+
+ .token.class-name {
+   color: #8ec07c
+ }
+ 
+ .token.keyword {
+   color: #fb4934;
+ }
+ 
+ .token.regex,
+ .token.important {
+   color: #fabd2f;
+ }
+ 
+ .token.important,
+ .token.bold {
+   font-weight: bold;
+ }
+ 
+ .token.italic {
+   font-style: italic;
+ }
+ 
+ .token.entity {
+   cursor: help;
+ }
+ 

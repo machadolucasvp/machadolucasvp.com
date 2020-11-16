@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import postStyles from './post.module.scss';
 import Comments from '../../components/Comments/comments';
-import '../../../static/prismjs/themes/dracula-theme.css';
+import '../../../static/prismjs/themes/gruvbox-dark-theme.css';
 
 export const res = graphql`
   query($slug: String) {
