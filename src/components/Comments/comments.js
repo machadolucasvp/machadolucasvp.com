@@ -12,6 +12,7 @@ const Comments = ({ title, url, identifier }) => {
     <div className={commentStyles.CommentsWrapper}>
       <div className={commentStyles.CommentsTitle}>Comentários</div>
       <ReactDisqusComments
+        className={commentStyles.disqus}
         shortname={disqusShortName}
         identifier={identifier}
         title={title}

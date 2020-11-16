@@ -3,16 +3,17 @@ import PropTypes from 'prop-types';
 
 const ThemeContext = createContext();
 
+// TODO: styles.scss --dark-color and --light-color isn't sync with themeColorMapper
 const buildTheme = (type = 'light') => {
   const themeColorMapper = {
-    dark: '#282c35',
+    dark: '#282828',
     light: '#ffffff',
   };
   return { type, color: themeColorMapper[type] };
 };
 
 const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState({ type: 'dark', color: '#282c35' });
+  const [theme, setTheme] = useState({ type: 'dark', color: '#282828' });
 
   const _setTheme = (type) => setTheme(buildTheme(type));
 
