@@ -2,7 +2,7 @@
     padding: 0 1rem;
     margin: 0 auto;
     min-height: 100vh;
-    max-width: 50rem;
+    max-width: var(--max-body-width);
 
     display: flex;
     flex-direction: column;

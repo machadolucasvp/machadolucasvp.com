@@ -7,9 +7,9 @@ const FeedbackCard = ({profile, renderMetadata, renderDescription}) => (
           <img src={profile} alt="Profile" />
           {renderMetadata && renderMetadata()}
         </div>
-        <span className={feedbackCardStyles.description} >
+        <div className={feedbackCardStyles.description} >
             {renderDescription && renderDescription()}
-        </span>
+        </div>
     </div>
 );
 

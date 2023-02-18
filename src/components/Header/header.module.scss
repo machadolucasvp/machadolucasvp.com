@@ -8,7 +8,7 @@ header {
 }
 
 .nav {
-    max-width: 50rem;
+    max-width: var(--max-body-width);
     display: flex;
     align-items: center;
     justify-content: space-between;

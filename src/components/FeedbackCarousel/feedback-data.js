@@ -10,9 +10,9 @@ const feedbackData = [
         onRenderMetadata: () => {
             return (
                 <span>
-                    <span>Paulo Correa</span>
+                    <span>Paulo Correa;</span>
                     <br />
-                    through{" "}
+                    Through{" "}
                     <a
                         target="_blank"
                         href="https://www.linkedin.com/in/paulocorreaslz"
@@ -64,9 +64,9 @@ const feedbackData = [
         onRenderMetadata: () => {
             return (
                 <span>
-                    <span>Marcelo Borges</span>
+                    <span>Marcelo Borges;</span>
                     <br />
-                    through{" "}
+                    Through{" "}
                     <a
                         target="_blank"
                         href="https://www.linkedin.com/in/marceloborgespereira/"
@@ -115,9 +115,9 @@ const feedbackData = [
         onRenderMetadata: () => {
             return (
                 <span>
-                    <span>Guido Coelho</span>
+                    <span>Guido Coelho;</span>
                     <br />
-                    through{" "}
+                    Through{" "}
                     <a
                         target="_blank"
                         href="https://www.linkedin.com/in/guidopcoelho/"
