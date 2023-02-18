@@ -18,6 +18,14 @@ body.light {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+
+    .slick-dots li button {
+        opacity: 0.4;
+        background: var(--dark-color) !important;
+  }
+    .slick-dots li.slick-active button {
+        background: var(--dark-color) !important;
+  }
 }
 
 body.dark {
@@ -31,6 +39,18 @@ body.dark {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+
+    .slick-dots li button {
+        opacity: 0.4;
+        background: var(--light-color) !important;
+  }
+    .slick-dots li.slick-active button {
+        background: var(--light-color) !important;
+  }
+}
+
+p {
+  margin-bottom: 1.75rem;
 }
 
 canvas {
@@ -51,6 +71,7 @@ h:hover {
     color: var(--primary);
     text-decoration: none;
 }
+
 blockquote {
     border-left: 4px solid var(--primary);
     color: var(--text);

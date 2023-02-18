@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+    color: var(--text);
+    border-left: 4px solid var(--primary);
+    color: var(--text);
+    font-style: italic;
+    margin: 0px 10px;
+    padding-left: 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+}
+
+.profile {
+    margin-left: 5px;
+    margin-right: 20px;
+    font-size: 1.1rem;
+
+
+    img {
+        width: 80px;
+        margin-right: 0.5rem;
+        border-radius: 50%;
+        border: 8px solid transparent;
+    }
+}
