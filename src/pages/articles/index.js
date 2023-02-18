@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 
 import Post from '../../components/Post/post';
-import blogStyles from './blog.module.scss';
+import articleStyles from './article.module.scss';
 
-const BlogPage = () => {
+const ArticlePage = () => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark {
@@ -26,7 +26,7 @@ const BlogPage = () => {
   `);
 
   return (
-    <div className={blogStyles.postList}>
+    <div className={articleStyles.postList}>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <Post
           key={node.fields.slug}
@@ -41,4 +41,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default ArticlePage;
