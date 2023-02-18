@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import Typist from 'react-typist';
 import { faLightbulb } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -44,7 +45,9 @@ const Header = () => {
             hex={theme.color}
           >
             {' '}
-            <h1>Lucas Machado</h1>
+            <Typist className={headerStyles.typer} cursor={{ hideWhenDone: true }} startDelay={1000}>
+                <h2>/machadolucasvp</h2>
+            </Typist>
           </AniLink>
         </div>
         <ul className={headerStyles.list}>
@@ -68,10 +71,10 @@ const Header = () => {
               paintDrip
               direction="top"
               duration={0.7}
-              to="/blog"
+              to="/articles"
               hex={theme.color}
             >
-              Blog
+              Articles
             </AniLink>
           </li>
           <li className={headerStyles.listItem}>

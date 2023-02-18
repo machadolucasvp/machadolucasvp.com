@@ -22,6 +22,11 @@ header {
     }
 }
 
+.typer {
+    display: flex;
+    align-items: center;
+}
+
 .list {
     list-style-type: none;
     display: flex;
@@ -53,7 +58,7 @@ header {
     align-items: center;
 
     img {
-        width: 75px;
+        width: 45px;
         margin-right: 0.5rem;
         border-radius: 50%;
         border: 8px solid transparent;

@@ -11,7 +11,7 @@ body.light {
     --bg: var(--light-color);
     --bg-variant: #d2d7df;
     --text: #282c35;
-    font-family: "Poppins", sans-srif;
+    font-family: "Hack", monospace;
     background-color: var(--bg);
     margin: 0 auto;
     color: var(--text);
@@ -24,7 +24,7 @@ body.dark {
     --bg: var(--dark-color);
     --bg-variant: rgba(210, 215, 223, 0.301);
     --text: #ffffff;
-    font-family: "Poppins", sans-srif;
+    font-family: "Hack", monospace;
     background-color: var(--bg);
     color: var(--text);
     margin: 0 auto;
@@ -41,6 +41,22 @@ a {
     color: var(--primary);
     text-decoration: none;
     outline: none;
+}
+
+h {
+    text-decoration: underline;
+}
+
+h:hover {
+    color: var(--primary);
+    text-decoration: none;
+}
+blockquote {
+    border-left: 4px solid var(--primary);
+    color: var(--text);
+    font-style: italic;
+    margin: 0px;
+    padding-left: 20px;
 }
 
 // Loader Styles

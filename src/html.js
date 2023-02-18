@@ -22,6 +22,7 @@ export default function HTML({
         {headComponents}
       </head>
       <body {...bodyAttributes} className="dark">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
