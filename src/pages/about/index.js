@@ -66,12 +66,12 @@ const AboutPage = () => {
                     </p>
                 </blockquote>
                 <h1 id="about-this-website"> About this website </h1>
-                Whether you stumbled upon this website by chance or
-                intentioanlly, welcome! I'm glad you are here.
+                Welcome! Whether you stumbled upon this website by chance or
+                intentionally, I'm glad you are here.
                 <p>
-                    This website is my tiny piece of the web for sharing
-                    thoughts, experiences and insights with the world. Hope you
-                    find it informative and engaging! Feel free to check-out my
+                    This website is my small corner of the web for sharing
+                    thoughts, experiences, and insights with the world. Hope you
+                    find it informative and engaging! Feel free to check out my
                     latest{" "}
                     <AniLink
                         paintDrip
@@ -105,9 +105,9 @@ const AboutPage = () => {
                 <p>
                     In my free time, I enjoy being engaged into software-related
                     content such as books and articles, as well as socializing
-                    over coffee with friends or exploring the environment outdoors.
-                    And from time to time, I get fully immersed in a random
-                    hobby or activity like playing flamenco guitar,
+                    over coffee with friends or exploring the environment
+                    outdoors. And from time to time, I get fully immersed in a
+                    random hobby or activity like playing flamenco guitar,
                     rollerblading, cycling, weightlifting and goes on...
                 </p>
                 <p>I believe empathy is the key to unlock a better world. </p>
