@@ -6,7 +6,7 @@ import FeedbackCard from "../FeedbackCard/feedback-card"
 import feedbackData from "./feedback-data"
 
 const FeedbackCarousel = () => (
-    <Carousel className={feedbackCarouselStyles.carousel} draggable={true} autoplay autoplaySpeed={15000}>
+    <Carousel className={feedbackCarouselStyles.carousel} draggable={true} autoplay autoplaySpeed={25000}>
             {feedbackData.map(feedback => {
                 return (
                         <FeedbackCard

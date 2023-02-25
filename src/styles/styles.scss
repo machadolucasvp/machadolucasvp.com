@@ -6,13 +6,16 @@
     --primary: #cc241d;
     --secondary: #d81e5b;
     --max-body-width: 50rem;
+    --font-family: "Hack", monospace;
+    --line-height: 1.5;
 }
 
 body.light {
     --bg: var(--light-color);
     --bg-variant: #d2d7df;
     --text: #282c35;
-    font-family: "Hack", monospace;
+    font-family: var(--font-family);
+    line-height: var(--line-height);
     background-color: var(--bg);
     margin: 0 auto;
     color: var(--text);
@@ -33,7 +36,8 @@ body.dark {
     --bg: var(--dark-color);
     --bg-variant: rgba(210, 215, 223, 0.301);
     --text: #ffffff;
-    font-family: "Hack", monospace;
+    font-family: var(--font-family);
+    line-height: var(--line-height);
     background-color: var(--bg);
     color: var(--text);
     margin: 0 auto;
