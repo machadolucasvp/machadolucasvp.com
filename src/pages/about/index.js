@@ -31,7 +31,7 @@ const AboutPage = () => {
                     <p>
                         Over the years,{" "}
                         <b>
-                            I've gained relevant experience as a software
+                            I've gained extensive experience as a software
                             engineer and engineering lead
                         </b>
                         . I've shipped entire products from scractch, scaled-up
