@@ -2,6 +2,7 @@ import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { Twemoji } from "react-emoji-render"
 import FeedbackCarousel from "../../components/FeedbackCarousel/feedback-carousel"
+import SEO from "../../components/SEO/SEO"
 
 import { useTheme } from "../../contexts/theme"
 
@@ -12,6 +13,7 @@ const AboutPage = () => {
 
     return (
         <div className={aboutStyles.container}>
+            <SEO pageTitle="About me" />
             <div className={aboutStyles.intro}>
                 <h1 id="about-me">About me </h1>
                 <p>
