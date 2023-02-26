@@ -68,13 +68,15 @@ const AboutPage = () => {
                     </p>
                 </blockquote>
                 <h1 id="about-this-website"> About this website </h1>
-                Welcome! Whether you stumbled upon this website by chance or
-                intentionally, I'm glad you are here.
+                <b>Welcome!</b> Whether you stumbled upon this website by chance
+                or intentionally, I'm glad you are here.
                 <p>
-                    This website is my small corner of the web for sharing
-                    thoughts, experiences, and insights with the world. Hope you
-                    find it informative and engaging! Feel free to check out my
-                    latest{" "}
+                    <b>
+                        This website is my small corner of the web for sharing
+                        thoughts, experiences, and insights with the world
+                    </b>
+                    . Hope you find it informative and engaging! Feel free to
+                    check out my latest{" "}
                     <AniLink
                         paintDrip
                         direction="top"
@@ -88,16 +90,17 @@ const AboutPage = () => {
                 </p>
                 <h1 id="a-bit-more-about-me"> A bit more about me </h1>
                 <p>
-                    I was born and raised in the northeast of Brazil, a place
-                    with a unique culture and vibrant people called São Luís.
-                    Currently, I'm living in Barcelona, Spain, which has been an
-                    amazing city to explore and call home. If you happen to be
-                    in town, let me know, and let's grab a coffee{" "}
+                    <b>I was born and raised in the northeast of Brazil</b>, a
+                    place with a unique culture and vibrant people called São
+                    Luís.
+                    <b> Currently, I'm living in Barcelona, Spain</b>, which has
+                    been an amazing city to explore and call home. If you happen
+                    to be in town, let me know, and let's grab a coffee{" "}
                 </p>
                 <p>
-                    I love Physics, Mathematics, and Computer Science, and I'm
+                    <b>I love Physics, Mathematics, and Computer Science, and I'm
                     fascinated by the way they shape our understanding of the
-                    world. At one point during my university years, I was drawn
+                    world</b>. At one point during my university years, I was drawn
                     to the field of theoretical physics and even participated in
                     several research programs related to astrophysics out of
                     sheer curiosity. I also love learning about History, as it
@@ -112,7 +115,10 @@ const AboutPage = () => {
                     random hobby or activity like playing flamenco guitar,
                     rollerblading, cycling, weightlifting and goes on...
                 </p>
-                <p>I believe empathy is the key to unlock a better world. </p>
+                <p>
+                    <b>I believe empathy is the key to unlock a better world</b>
+                    .{" "}
+                </p>
                 <h1 id="what-people-have-to-say-about-me">
                     What people have to say about me
                 </h1>
