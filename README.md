@@ -1,8 +1,7 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <div align="center">
  <h1>
-  <a href="https://lucasmachado.surge.sh">
-    lucasmachado.surge.sh
+  <a href="https://machadolucasvp.com" rel="noopener noreferrer" target="_blank">
+    machadolucasvp.com
   </a>
 </h1>
 </div>
@@ -21,12 +20,9 @@ then open `https://localhost:8000` or `https://localhost:8000/__graphql` for gra
 
 ## What's using?
 
-- React
-- Gatsby
-- GraphQL
-- Prism.js
-- Disqus
+-   React
+-   Gatsby
+-   GraphQL
+-   Prism.js
+-   Disqus
 
-## Standards
-
-This project uses css modules, [commitlint](https://github.com/conventional-changelog/commitlint) with [husky](https://github.com/typicode/husky) and [eslint](https://eslint.org/)
