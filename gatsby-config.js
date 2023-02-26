@@ -3,6 +3,9 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+require("dotenv").config({
+  path: `.env`,
+})
 
 module.exports = {
     /* Your site config here */
@@ -14,6 +17,18 @@ module.exports = {
         siteUrl: "https://www.machadolucasvp.com"
     },
     plugins: [
+        {
+            resolve: "gatsby-plugin-google-gtag",
+            options: {
+                trackingIds: [
+                    process.env.GA_TOKEN
+                ],
+                pluginConfig: {
+                    head: true
+                }
+            }
+
+        },
         "gatsby-plugin-sass",
         {
             resolve: "gatsby-plugin-transition-link",
